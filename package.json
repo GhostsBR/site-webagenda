@@ -18,7 +18,7 @@
   "homepage": "https://github.com/GhostsBR/site-webagenda#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.11.8"
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
