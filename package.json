@@ -4,7 +4,7 @@
   "description": "Desenvolvido como um trabalho de Fundamentos da Engenharia de Software para a Universidade do Estado de Santa Catarina (UDESC)",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/GhostsBR/site-webagenda#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
