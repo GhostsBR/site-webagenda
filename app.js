@@ -1,13 +1,15 @@
 const express = require('express');
-
-
-const router = express.Router();
-router.get('/', (req, res) => {
-    res.send('Olá mundo!')
-})
+const router = require('./routes/index');
+const helpers = require('./helpers');
 
 //Config
 const app = express();
+
+app.use((req, res, next) => {
+    res.locals.h = helpers;
+    next();
+})
+
 app.use('/', router);
 
 module.exports = app;
