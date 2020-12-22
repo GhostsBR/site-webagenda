@@ -1,0 +1,22 @@
+{
+  "name": "site-webagenda",
+  "version": "1.0.0",
+  "description": "Desenvolvido como um trabalho de Fundamentos da Engenharia de Software para a Universidade do Estado de Santa Catarina (UDESC)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GhostsBR/site-webagenda.git"
+  },
+  "author": "Gustavo Lemos (Back)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GhostsBR/site-webagenda/issues"
+  },
+  "homepage": "https://github.com/GhostsBR/site-webagenda#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
