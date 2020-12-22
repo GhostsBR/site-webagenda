@@ -14,6 +14,7 @@ app.use((req, res, next) => {
 
 app.use('/', router);
 
+//Error 404
 app.use(errorHandler.pageNotFound);
 
 app.engine('mst', mustache());
