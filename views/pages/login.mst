@@ -4,136 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
   <title>Login</title>
-  <style>
-    body{
-      margin: 0;
-      padding: 0;
-      }
-    
-    .menu{
-      width: 100%;
-    }
-
-    .logo {
-      max-width: 10px;
-    }
-    .menu {
-      background: #339cf7;
-      padding: 40px 25px;
-      box-shadow: 0px 3px 6px #00000045;
-    }
-    .usuario {
-      top: 369px;
-      left: 710px;
-      width: 600px;
-      height: 65px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 20px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
-      text-align: left;
-      font: normal normal normal 32px/23px Quicksand; 
-      letter-spacing: 0px;
-      color: #339cf7;
-      opacity: 1;
-  
-    }
-    .usuario::placeholder {
-      color: #339cf7;
-    }
-    .senha {
-      top: 369px;
-      left: 710px;
-      width: 600px;
-      height: 65px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 20px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
-      text-align: left;
-      font: normal normal normal 32px/23px Quicksand;
-      letter-spacing: 0px;
-      color: #339cf7;
-      opacity: 1;
-      
-    }
-    .senha::placeholder {
-      color: #339cf7;
-     
-    }
-    .entrar {
-      top: 550px;
-      left: 710px;
-      width: 600px;
-      height: 65px;
-      background: #339cf7 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 20px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 25px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
-      text-align: center;
-      font: normal normal normal 30px/30px Quicksand;
-    }
-    .registrar {
-      left: 710px;
-      width: 600px;
-      height: 65px;
-      background: #0272d4 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #01010166;
-      border-radius: 20px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
-      text-align: center;
-      font: normal normal normal 30px/30px Quicksand;
-    }
-
-    .background {
-      top: -25px;
-      background-image: url(..\public/img\fundo1.svg);
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      bottom: 0;
-      margin-top: 5%;
-      color: black;
-      position: relative;
-      text-align: center;
-      background-size: cover;
-      z-index: 0;
-      padding: 100px 0;
-      background-size: 100% 100%;
-    }
-
-    .div_usuario{
-      padding:3px;
-    }
-
-    .div_senha{
-      padding:3px;
-    }
-
-    .div_entrar{
-      padding:3px;
-    }
-
-     .div_registrar{
-      padding:3px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="assets/css/login.css" />
 </head>
 
 <body>
@@ -141,24 +12,24 @@
     <div>
       <div>
         <a href="#">
-          <img class="logo" src="../img/logo.png" alt="logo">
+          <img class="logo" src="img/logo.png" alt="logo">
         </a>
       </div>
     </div>
   </header>
   <div class="background">
     <form class="form" action="">
-      <div class="div_usuario">
-        <input class="usuario" type="email" placeholder="Username">
+      <div>
+        <input class="usuario" type="username" placeholder="Username" required>
       </div>
-      <div class="div_senha">
-        <input class="senha" type="password" placeholder="Password">
+      <div>
+        <input class="senha" type="password" placeholder="Password" required>
       </div>
-      <div class="div_entrar">
+      <div>
         <button class="entrar" type="submit"> ENTRAR </button>
       </div>
-      <div class="div_registrar">
-        <button class="registrar " onclick="window.location.href = 'www.google.com.br'">CADASTRAR-SE</button>
+      <div>
+        <button class="registrar " onclick="window.location.href = '/registro'">CADASTRAR-SE</button>
       </div>
     </form>
   </div>
