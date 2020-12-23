@@ -20,7 +20,7 @@
   <div class="background">
     <form class="form" action="">
       <div>
-        <input class="usuario" type="email" placeholder="Username" required>
+        <input class="usuario" type="username" placeholder="Username" required>
       </div>
       <div>
         <input class="senha" type="password" placeholder="Password" required>
@@ -29,7 +29,7 @@
         <button class="entrar" type="submit"> ENTRAR </button>
       </div>
       <div>
-        <button class="registrar " onclick="window.location.href = '#'">CADASTRAR-SE</button>
+        <button class="registrar " onclick="window.location.href = '/registro'">CADASTRAR-SE</button>
       </div>
     </form>
   </div>
