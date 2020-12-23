@@ -11,9 +11,15 @@
     <body>
         <div class="errorSpace">
             <div class="errorBox">
-                <img src="img/robot.png" alt="robot" height="200">
-                <div class="errorTitle">{{title}}</div>
-                <div class="errorDescription">{{description}}</div>
+                {{#img}}
+                    <img src="{{img.url}}" alt="{{img.alt}}" height="{{img.height}}">
+                {{/img}}
+                {{#title}}
+                    <div class="errorTitle">{{title}}</div>
+                {{/title}}
+                {{#description}}
+                    <div class="errorDescription">{{description}}</div>
+                {{/description}}
             </div>
         </div>
     </body>
