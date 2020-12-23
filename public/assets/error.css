@@ -23,6 +23,7 @@ body {
 }
 
 .errorTitle {
+    text-align: center;
     flex: 2;
     color: #339cf7;
     font-weight: bold;
@@ -30,6 +31,7 @@ body {
 }
 
 .errorDescription {
+    text-align: center;
     flex: 2;
     color: #339cf7;
     font-size: 20px;
