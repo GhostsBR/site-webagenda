@@ -88,7 +88,7 @@
     }
 
     .background {
-      background-image: url(../../img/fundo1.svg);
+      background-image: url(img/fundo1.svg);
       background-repeat: no-repeat;
       background-size: 100% 100%;
       bottom: 0;
@@ -109,7 +109,7 @@
     <div>
       <div>
         <a href="#">
-          <img class="logo" src="../img/logo.png" alt="logo">
+          <img class="logo" src="img/logo.png" alt="logo">
         </a>
       </div>
     </div>
@@ -117,10 +117,10 @@
   <div class="background">
     <form class="form" action="">
       <div>
-        <input class="usuario" type="email" placeholder="Username">
+        <input class="usuario" type="email" placeholder="Username" required>
       </div>
       <div>
-        <input class="senha" type="password" placeholder="Password">
+        <input class="senha" type="password" placeholder="Password" required>
       </div>
       <div>
         <button class="entrar" type="submit"> ENTRAR </button>

@@ -1,0 +1,61 @@
+<body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+
+        <style>
+            body {
+            padding: 0;
+            margin: 0;
+            background: #fff;
+            font-family: "Quicksand", sans-serif;
+            }
+
+            .header {
+            background-color: #339cf7;
+            padding: 15px 0;
+            margin-bottom: 60px;
+            box-shadow: 0px 3px 6px #00000045;
+            }
+
+            .header .logo {
+            width: 40px;
+            }
+
+            .header .avatar {
+            width: 60px;
+            }
+
+            .header-align {
+            display: flex;
+            align-items: center;
+            }
+        </style>
+    </head>
+    <div class="header">
+        <div class="container-fluid header-align">
+        <div class="col-md-6 text-left">
+            <img src="..\img\logo.png" class="logo" alt="" />
+        </div>
+        <div class="col-md-6 text-right">
+            <img src="..\img\avatar.png" class="avatar" alt="" />
+        </div>
+        </div>
+    </div>
+    {{#flashes}}
+        {{#sucess}}
+            <div>{{.}}</div>
+        {{/sucess}}
+        {{#info}}
+            <div>{{.}}</div>
+        {{/info}}
+        {{#error}}
+            <div>{{.}}</div>
+        {{/error}}
+    {{/flashes}}
+</body>

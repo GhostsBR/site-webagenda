@@ -49,9 +49,7 @@
     <body>
         <div class="errorSpace">
             <div class="errorBox">
-                <script type="text/mustache" id="template">
-                    <img src="{{img}}.png">
-                </script>
+                <img src="img/robot.png" alt="robot" height="200">
                 <div class="errorTitle">{{title}}</div>
                 <div class="errorDescription">{{description}}</div>
             </div>
