@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('express-flash');
 
+const { user } = require('./models/database');
 
 const passport = require('passport');
 const localStrategy = require('passport-local').Strategy;
