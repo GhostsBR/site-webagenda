@@ -12,23 +12,23 @@
     <div>
       <div>
         <a href="#">
-          <img class="logo" src="img/logo.png" alt="logo">
+          <img class="logo" src="img\img\logo.png" alt="logo">
         </a>
       </div>
     </div>
   </header>
   <div class="background">
     <form class="form" action="">
-      <div>
+      <div class="div-usuario">
         <input class="usuario" type="username" placeholder="Username" required>
       </div>
-      <div>
+      <div class="div-senha">
         <input class="senha" type="password" placeholder="Password" required>
       </div>
-      <div>
+      <div class="div-entrar">
         <button class="entrar" type="submit"> ENTRAR </button>
       </div>
-      <div>
+      <div class="div-registrar">
         <button class="registrar " onclick="window.location.href = '/registro'">CADASTRAR-SE</button>
       </div>
     </form>
