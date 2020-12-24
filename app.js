@@ -1,12 +1,13 @@
 const express = require('express');
 const mustache = require('mustache-express');
-const router = require('./routes/index');
-const helpers = require('./helpers');
-const errorHandler = require('./handlers/errorHandler');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('express-flash');
 const database = require('./models/database');
+
+const router = require('./routes/index');
+const helpers = require('./helpers');
+const errorHandler = require('./handlers/errorHandler');
 
 require('dotenv').config({path:'variables.env'});
 
