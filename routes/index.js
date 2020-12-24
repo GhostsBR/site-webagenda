@@ -8,6 +8,8 @@ const router = express.Router();
 router.get('/', homeController.index);
 router.get('/painel', mainController.index);
 router.get('/login', loginController.index);
+router.post('/login', loginController.loginAction);
 router.get('/registro', registerController.index);
+router.post('/registro', registerController.registerAction);
 
 module.exports = router;

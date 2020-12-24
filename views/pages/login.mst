@@ -19,15 +19,15 @@
     </div>
   </header>
   <div class="background">
-    <form class="form" action="">
+    <form class="form" method="POST">
       <div class="div-usuario">
-        <input class="usuario" type="username" placeholder="Username" required>
+        <input class="usuario" type="email" placeholder="Email" name="email" required>
       </div>
       <div class="div-senha">
-        <input class="senha" type="password" placeholder="Password" required>
+        <input class="senha" type="password" placeholder="Senha" name="pass" required>
       </div>
       <div class="div-entrar">
-        <button class="entrar" type="submit"> ENTRAR </button>
+        <button class="entrar" type="submit" value="login"> ENTRAR </button>
       </div>
       <div class="div-registrar">
         <button class="registrar " onclick="window.location.href = '/registro'">CADASTRAR-SE</button>
