@@ -27,10 +27,10 @@
         <input class="senha" type="password" placeholder="Senha" name="password" required>
       </div>
       <div class="div-entrar">
-        <button class="entrar" type="submit" value="login"> ENTRAR </button>
+        <button class="entrar" type="submit" value="login"> REGISTRAR </button>
       </div>
       <div class="div-registrar">
-        <button class="registrar " onclick="window.location.href = '/register'">CADASTRAR-SE</button>
+        <button class="registrar " onclick="window.location.href = '/login'">ENTRAR</button>
       </div>
     </form>
   </div>

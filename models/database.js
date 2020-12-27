@@ -15,27 +15,32 @@ const PassaportLocalMongoose = require('passport-local-mongoose');
 const userSchema = new mongoose.Schema({
     id: {
         type: Number,
-        require: true
+        //require: true
     },
     fullname: {
         type: String,
-        require: true
+        //require: true
     },
     email: {
         type: String,
-        require: true
+        //require: true
+    },
+    password: {
+        type: String,
+        //require: true
     },
     verifyed: {
         type: Boolean,
-        require: true
+        //require: true,
+        default: false
     },
     group: {
         type: String,
-        require: true
+        //require: true
     },
     photo: {
         type: String,
-        require: true
+        //require: true
     }
 });
 
