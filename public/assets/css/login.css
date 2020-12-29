@@ -4,7 +4,7 @@ body{
   }
 
   .menu{
-    max-width:100%;;
+    max-width: width 100%;;
   }
 
   .logo {
@@ -65,7 +65,7 @@ body{
   .entrar {
     top: 550px;
     left: 710px;
-    width: 400px;
+    width: 407px;
     height: 55px;
     background: #339cf7 0% 0% no-repeat padding-box;
     font: normal normal normal 27px/43px Quicksand;
@@ -77,7 +77,7 @@ body{
   }
   .registrar {
     left: 710px;
-    width: 400px;
+    width: 407px;
     height: 55px;
     background: #0272d4 0% 0% no-repeat padding-box;
     font: normal normal normal 27px/43px Quicksand;
@@ -89,7 +89,7 @@ body{
   }
 
   .background {
-    background-image: url(img/fundo.jpg);
+    background-image: url(img/fundo1.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     bottom: 0;
@@ -115,6 +115,6 @@ body{
     padding: 8px;
   }
   
-  .div-cadastrar{
+  .div-registrar{
     padding: 8px;
   }

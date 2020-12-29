@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/registro.css">
+  <title>registro</title>
+</head>
+<body>
+  <header class="menu">
+    <div>
+      <div>
+        <a href="#">
+          <img class="logo" src="../../public/img/logo.png" alt="logo">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div>
+    <div class="background" >
+      <form action="">
+      <div class="div-nome">
+        <input class="nome" type="text" placeholder="Nome completo" required>
+      </div>
+      <div class="div-usuario">
+        <input class="usuario" type="username" placeholder="Usuário" required>
+      </div>
+      <div class="div-senha>
+        <input class="senha" type="password" placeholder="Senha" required>
+      </div>
+      <div class="div-select">
+        <select name="instituição">
+          <option value="valor0"selected >Tipo de instituição</option>
+          <option value="valor1">Escola</option>
+          <option value="valor2" >Universidade</option>
+          <option value="valor3">Profissional</option>
+        </select>
+      </div>
+      <div class="div-nome_inst">
+        <input class="nome_inst" type="text" placeholder="Nome da instituição" required>
+      </div>
+      <div class="div-turma">
+        <input class="turma" type="text" placeholder="Turma" required>
+      </div>
+      <div class="div-registrar">
+        <button class="registrar" onclick="window.location.href = '#'" >CADASTRAR
+        </button>
+        
+      </div>
+      </form>
+    </div>
+     
+    
+  </div>
+</body>
+</html>
