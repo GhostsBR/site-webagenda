@@ -29,7 +29,7 @@
         <button class="entrar" type="submit"> ENTRAR </button>
       </div>
       <div class="div-registrar">
-        <button class="registrar " onclick="window.location.href = '/registro'">CADASTRAR-SE</button>
+        <button class="registrar " onclick="window.location.href = '/registro'"git>CADASTRAR-SE</button>
       </div>
     </form>
   </div>
