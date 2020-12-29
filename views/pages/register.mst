@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
+  <title>Login</title>
+  <link rel="stylesheet" href="assets/css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="menu">
+    <div>
+      <div>
+        <a href="#">
+          <img class="logo" src="img\logo.png" alt="logo">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="background">
+    <form class="form" method="POST">
+      <div class="div-usuario">
+        <input class="usuario" type="email" placeholder="Email" name="email" required>
+      </div>
+      <div class="div-senha">
+        <input class="senha" type="password" placeholder="Senha" name="password" required>
+      </div>
+      <div class="div-entrar">
+        <button class="entrar" type="submit" value="login"> REGISTRAR </button>
+      </div>
+      <div class="div-registrar">
+        <button class="registrar " onclick="window.location.href = '/login'">ENTRAR</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
