@@ -12,7 +12,7 @@ body{
   opacity: 1;
 }
 .usuario {
-  top: 369px;
+top: 369px;
   left: 710px;
   width: 400px;
   height: 55px;
@@ -24,11 +24,11 @@ body{
   font: var(--unnamed-font-style-normal) normal
     var(--unnamed-font-weight-normal) 10px/23px Quicksand;
   letter-spacing: var(--unnamed-character-spacing-0);
-  text-align: left;
+  text-align: center;
   font: normal normal normal 30px/43px Quicksand;
   letter-spacing: 0px;
   color: #339cf7;
-  opacity: 1;
+  opacity: 1;  
 }
 .nome{
   top: 369px;
@@ -43,7 +43,7 @@ body{
   font: var(--unnamed-font-style-normal) normal
     var(--unnamed-font-weight-normal) 10px/23px Quicksand;
   letter-spacing: var(--unnamed-character-spacing-0);
-  text-align: left;
+  text-align: center;
   font: normal normal normal 30px/43px Quicksand;
   letter-spacing: 0px;
   color: #339cf7;
@@ -62,49 +62,31 @@ body{
   font: var(--unnamed-font-style-normal) normal
     var(--unnamed-font-weight-normal) 10px/23px Quicksand;
   letter-spacing: var(--unnamed-character-spacing-0);
-  text-align: left;
+  text-align: center;
   font: normal normal normal 30px/43px Quicksand;
   letter-spacing: 0px;
   color: #339cf7;
   opacity: 1;
 } 
-
-  .div-select select {      
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: url(../../img/Icon\ feather-arrow-down-circle.svg) no-repeat right #ffffff;
-    background-position: 98%;
-    width: 405px;
-    height: 55px;
-    box-shadow: 0px 3px 6px #00000099;
-    border: 1px solid #00000066;
-    border-radius: 10px;
-    font-size: 30px;
-    font-family: Quicksand;
-    color: #339cf7 ;
-    padding-right: 20px;
-          
-    }
-    .nome_inst{
-      top: 369px;
-      left: 710px;
-      width: 400px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 10px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
-      text-align: left;
-      font: normal normal normal 30px/43px Quicksand;
-      letter-spacing: 0px;
-      color: #339cf7;
-      opacity: 1;
-    }
+.email{
+  top: 369px;
+  left: 710px;
+  width: 400px;
+  height: 55px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000099;
+  border: 1px solid #00000066;
+  border-radius: 10px;
+  opacity: 1;
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) 10px/23px Quicksand;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  text-align: center;
+  font: normal normal normal 30px/43px Quicksand;
+  letter-spacing: 0px;
+  color: #339cf7;
+  opacity: 1;
+}
     .turma{
       top: 369px;
       left: 710px;
@@ -137,18 +119,33 @@ body{
     padding: 5px;
     }
     .background {
-      background-image: url(../../img/fundo1.svg);
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-repeat: no-repeat
       bottom: 0;
       margin-top: 5%;
-      color: black;
       position: relative;
       text-align: center;
       background-size: cover;
       z-index: 0;
       padding: 150px 0;
-      background-size: 100% 100%;
+    }
+    .date{
+      top: 369px;
+      left: 710px;
+      width: 400px;
+      height: 55px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000099;
+      border: 1px solid #00000066;
+      border-radius: 10px;
+      opacity: 1;
+      font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
+      letter-spacing: var(--unnamed-character-spacing-0);
+      text-align: center;
+      font: normal normal normal 30px/43px Quicksand;
+      letter-spacing: 0px;
+      color: #339cf7;
+      opacity: 1;
     }
     .div-usuario{
       padding-bottom: 8px;
@@ -158,14 +155,16 @@ body{
       padding: 8px;
     }
     
-    .div-nome_inst{
-      padding: 8px;
-    }
-    
     .div-registrar{
       padding: 8px;
     }
 
     .div-nome{
+      padding: 8px;
+    }
+    .div-email{
+      padding: 8px;
+    }
+    .div-datatext-align: center;{
       padding: 8px;
     }
