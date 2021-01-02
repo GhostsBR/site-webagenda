@@ -8,15 +8,7 @@
   <title>registro</title>
 </head>
 <body>
-  <header class="menu">
-    <div>
-      <div>
-        <a href="#">
-          <img class="logo" src="img/logo.png" alt="logo">
-        </a>
-      </div>
-    </div>
-  </header>
+  {{> header}}
   <div>
     <div class="background" >
       <form action="">

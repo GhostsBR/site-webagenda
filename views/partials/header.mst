@@ -37,16 +37,18 @@
             }
         </style>
     </head>
-    <div class="header">
-        <div class="container-fluid header-align">
-        <div class="col-md-6 text-left">
-            <img src="..\img\logo.png" class="logo" alt="" />
+    <header>
+        <div class="header">
+            <div class="container-fluid header-align">
+            <div class="col-md-6 text-left">
+                <img src="..\img\logo.png" class="logo" alt="" />
+            </div>
+            <div class="col-md-6 text-right">
+                <img src="..\img\avatar.png" class="avatar" alt="" />
+            </div>
+            </div>
         </div>
-        <div class="col-md-6 text-right">
-            <img src="..\img\avatar.png" class="avatar" alt="" />
-        </div>
-        </div>
-    </div>
+        </header>
     {{#flashes}}
         {{#sucess}}
             <div>{{.}}</div>
