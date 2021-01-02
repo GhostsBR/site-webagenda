@@ -29,6 +29,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         //require: true
     },
+    birth: {
+        type: String,
+        //require: true
+    },
     verifyed: {
         type: Boolean,
         //require: true,

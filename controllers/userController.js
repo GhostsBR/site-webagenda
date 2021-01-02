@@ -34,3 +34,7 @@ exports.registerAction = (req, res) => {
         }
     });
 }
+
+exports.logoutAction = (req, res) => {
+    user.logout();
+}
