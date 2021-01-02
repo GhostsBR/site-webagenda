@@ -12,29 +12,29 @@
   <div>
     <div class="background" >
       <form action="">
-      <div class="div-nome">
-        <input class="nome" type="text" placeholder="Nome completo" required>
-      </div>
-      <div class="div-usuario">
-        <input class="usuario" type="username" placeholder="Usuário" required>
-      </div>
-      <div class="div-email">
-        <input class="email" type="email" placeholder="Email" required>
-      </div>
-      <div class="div-senha">
-        <input class="senha" type="password" placeholder="Senha" required>
-      </div>
-       <div class="div-data">
-           <label for="diaa"></label>
-          <input class="date" type="date" id="diaa" name="diaa">
-        </div>
-      <div class="div-registrar">
-        <button class="registrar" onclick="window.location.href = '#'" >CADASTRAR
-        </button>       
-      </div>
-      </form>
-    </div>
-    </div>
+        <div class="div-nome">
+          <input class="nome" type="text" placeholder="Nome Completo" required>
+            </div>
+        <div class="div-usuario">
+          <input class="usuario" type="username" placeholder="Usuário" required>
+            </div>
+        <div class="div-email">
+          <input class="email" type="email" placeholder="Email" required>
+            </div>
+        <div class="div-senha">
+          <input class="senha" type="password" placeholder="Senha" required>
+            </div>
+        <div class="div-data">
+            <label for="diaa"></label>
+            <input class="date" type="date" id="diaa" name="diaa">
+              </div>
+        <div class="div-registrar">
+            <button class="registrar" onclick="window.location.href = '#'" >CADASTRAR
+            </button>       
+              </div>
+        </form>
+              </div>
+              </div>
     
 </body>
 </html>
