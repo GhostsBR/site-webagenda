@@ -14,18 +14,19 @@
       <form method="POST">
         <div class="div-nome">
           <input class="nome" type="text" placeholder="Nome Completo" required>
-            </div>
+        </div>
         <div class="div-email">
           <input class="email" type="email" placeholder="Email" required>
-            </div>
+        </div>
         <div class="div-senha">
           <input class="senha" type="password" placeholder="Senha" required>
-            </div>
+        </div>
         <div class="div-data">
-            <label for="diaa"></label>
-            <input class="date" type="date" id="diaa" name="diaa">
-              </div>
+          <label for="diaa"></label>
+          <input class="date" type="date" id="diaa" name="diaa">
+        </div>
         <div class="div-registrar">
+<<<<<<< HEAD
             <button class="registrar" onclick="window.location.href = '#'" >CADASTRAR
             </button>       
               </div>
@@ -33,5 +34,13 @@
     </div>
   </div>
     
+=======
+          <button class="registrar" onclick="window.location.href = '#'" >CADASTRAR
+          </button>       
+        </div>
+      </form>
+    </div>
+  </div>
+>>>>>>> 8d542a82f66bc59450a42831bc73124c7f526499
 </body>
 </html>
