@@ -15,9 +15,6 @@
         <div class="div-nome">
           <input class="nome" type="text" placeholder="Nome Completo" required>
             </div>
-        <div class="div-usuario">
-          <input class="usuario" type="username" placeholder="Usuário" required>
-            </div>
         <div class="div-email">
           <input class="email" type="email" placeholder="Email" required>
             </div>
