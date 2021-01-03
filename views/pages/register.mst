@@ -11,7 +11,7 @@
   {{> header}}
   <div>
     <div class="background" >
-      <form action="">
+      <form method="POST">
         <div class="div-nome">
           <input class="nome" type="text" placeholder="Nome Completo" required>
             </div>
@@ -30,8 +30,8 @@
             </button>       
               </div>
         </form>
-              </div>
-              </div>
+    </div>
+  </div>
     
 </body>
 </html>
