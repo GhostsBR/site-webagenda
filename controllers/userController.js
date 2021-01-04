@@ -9,14 +9,13 @@ exports.loginAction = (req, res) => {
 
     auth(req.body.email, req.body.password, (error, result) => {
         if(!result) {
-            console.log("falha!")
+            console.log("falha!");
             return;
         }
 
         req.login(result, ()=>{});
-        console.log("sucesso!")
+        console.log("sucesso!");
         res.redirect('/');
-        console.log(req.user);
     });
 }
 
@@ -24,17 +23,30 @@ exports.register = (req, res) => {
     res.render('register');
 }
 
-exports.registerAction = (req, res) => {
+exports.registerAction = (req, res) => { 
+    //req.body.username = req.body.email;
     user.register(new user(req.body), req.body.password, (error) => {
         if(error) {
             console.log(error);
             return;
         } else {
-            res.redirect('/');
+            const auth = user.authenticate();
+
+            auth(req.body.email, req.body.password, (error, result) => {
+                if(!result) {
+                    console.log("falha!");
+                    return;
+                }
+        
+                req.login(result, ()=>{});
+                console.log("sucesso!");
+                res.redirect('/');
+            });
         }
-    });
+    });  
 }
 
 exports.logoutAction = (req, res) => {
-    user.logout();
+    req.logout();
+    res.redirect('/');
 }

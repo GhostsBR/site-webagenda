@@ -19,32 +19,34 @@ const userSchema = new mongoose.Schema({
     },
     fullname: {
         type: String,
-        //require: true
+        require: true
     },
     email: {
         type: String,
-        //require: true
+        require: true
     },
     password: {
         type: String,
-        //require: true
+        require: true
     },
     birth: {
         type: String,
-        //require: true
+        require: true
     },
     verifyed: {
         type: Boolean,
-        //require: true,
+        require: true,
         default: false
     },
     group: {
-        type: String,
-        //require: true
+        type: Array,
+        require: true,
+        default: []
     },
     photo: {
         type: String,
-        //require: true
+        require: true,
+        default: 'default.png'
     }
 });
 
