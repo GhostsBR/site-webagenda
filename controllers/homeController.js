@@ -1,4 +1,4 @@
 exports.index = (req, res) => {
-    res.json(req.user);
+    res.render('home');
     console.log(req.user);
 }
