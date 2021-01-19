@@ -1,6 +1,11 @@
 const { user } = require('../models/database');
 
 exports.login = (req, res) => {
+    if(req.user) {
+        res.redirect('/panel');
+        return;
+    }
+    
     res.render('login');
 };
 
@@ -21,6 +26,11 @@ exports.loginAction = (req, res) => {
 }
 
 exports.register = (req, res) => {
+    if(req.user) {
+        res.redirect('/panel');
+        return;
+    }
+
     res.render('register');
 }
 

@@ -6,7 +6,8 @@ const authMiddleware = require('../middlewares/authMiddleware');
 
 const router = express.Router();
 router.get('/', homeController.index);
-router.get('/painel', authMiddleware.isLogged, mainController.index);
+router.get('/painel', (req, res) => {res.redirect('/panel')});
+router.get('/panel', authMiddleware.isLogged, mainController.index);
 router.get('/entrar', (req, res) => {res.redirect('/login')})
 router.get('/login', userController.login);
 router.post('/login', userController.loginAction);

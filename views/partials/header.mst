@@ -16,7 +16,7 @@
                         {{#user}}
                             <div class="btn-group ml-auto p-2 profilebutton">
                                 <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Gustavo
+                                    {{user.fullname}}
                                 </button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="/profile">Perfil</a>
