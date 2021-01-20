@@ -6,31 +6,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/header.css">
-        
     </head>
     <body>
         <header>
-                <div class="container-fluid" >
+                <div class="container-fluid" id="containerHeader" >
                     <div class="row align-items-center" style="height: 100%; padding: 10px; padding-left: 20px; padding-right: 20px;">
                         <a href="/"><img src="img/logo.png" alt="Logo" height="50px"></a>
                         {{#user}}
                             <div class="btn-group ml-auto p-2 profilebutton">
-                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                     {{user.fullname}}
                                 </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="/profile">Perfil</a>
-                                <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="/logout">Sair</a>
-                                </div>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/profile">Perfil</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="/logout">Sair</a></li>
+                                </ul>
                             </div>
                         {{/user}}
                     </div>
                 </div>
             {{#flashes}}
                 {{#success}}
-                    <div class="container">
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <div class="container-fluid" style="position: absolute;">
+                        <div class="alert alert-success alert-dismissible fade show">
                             {{.}}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -39,8 +38,8 @@
                     </div>
                 {{/success}}
                 {{#warning}}
-                    <div class="container">
-                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <div class="container-fluid">
+                        <div class="alert alert-warning alert-dismissible fade show">
                             {{.}}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -49,8 +48,8 @@
                     </div>
                 {{/warning}}
                 {{#info}}
-                    <div class="container">
-                        <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                    <div class="container-fluid">
+                        <div class="alert alert-secondary alert-dismissible fade show">
                             {{.}}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -59,8 +58,8 @@
                     </div>
                 {{/info}}
                 {{#error}}
-                    <div class="container">
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <div class="container-fluid">
+                        <div class="alert alert-danger alert-dismissible fade show">
                             {{.}}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -70,7 +69,6 @@
                 {{/error}}
             {{/flashes}}
         </header>
-
         <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
