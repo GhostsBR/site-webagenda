@@ -21,7 +21,7 @@ exports.loginAction = (req, res) => {
 
         req.login(result, ()=>{});
         req.flash('success', 'Login efetuado com sucesso!');
-        res.redirect('/');
+        res.redirect('/panel');
     });
 }
 
