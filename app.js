@@ -3,6 +3,7 @@ const mustache = require('mustache-express');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('express-flash');
+const email = require('./models/nodeMailer');
 
 const { user } = require('./models/database');
 
