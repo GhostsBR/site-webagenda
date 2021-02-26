@@ -1,7 +1,7 @@
 const nodeoutlook = require('nodejs-nodemailer-outlook')
 require('dotenv').config({path:'variables.env'});
 
-exports.sendMail = (to, subject, text) => {
+exports.sendMail = (to, subject, html) => {
     nodeoutlook.sendEmail({
         auth: {
             user: process.env.EMAIL,
@@ -10,7 +10,7 @@ exports.sendMail = (to, subject, text) => {
         from: process.env.EMAIL,
         to,
         subject,
-        text,
+        html,
     
         onError: (e) => console.log(e),
         onSuccess: (i) => console.log(i)
