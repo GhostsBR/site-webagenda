@@ -15,5 +15,6 @@ router.get('/registro', (req, res) => {res.redirect('/register')})
 router.get('/register', userController.register);
 router.post('/register', userController.registerAction);
 router.get('/logout', userController.logoutAction);
+router.get('/confirm/:token', userController.confirmAction);
 
 module.exports = router;
