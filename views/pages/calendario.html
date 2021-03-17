@@ -8,18 +8,18 @@
 <link rel="stylesheet" href="../../public/assets/css/calendario.css" />
 
 <body class="main">
-        <div class="month">      
+    <div class="month">
         <ul>
             <li class="prev">&#10094;</li>
             <li class="next">&#10095;</li>
             <li>
-            JANEIRO<br>
-            <span style="font: size 18px;">2021</span>
+                JANEIRO<br>
+                <span style="font: size 18px;">2021</span>
             </li>
         </ul>
-        </div>
+    </div>
 
-        <ul class="weekdays">
+    <ul class="weekdays">
         <li>D</li>
         <li>S</li>
         <li>T</li>
@@ -27,10 +27,10 @@
         <li>Q</li>
         <li>S</li>
         <li>S</li>
-        </ul>
+    </ul>
 
-        <ul class="days">  
-        <li onclick='ISSO()'> 1 </li>
+    <ul class="days">
+        <li id="myBtn" onclick='AbrirModal()'> 1 </li>
         <li>2</li>
         <li>3</li>
         <li>4</li>
@@ -61,13 +61,55 @@
         <li>29</li>
         <li>30</li>
         <li>31</li>
-        </ul>
+    </ul>
+
+    <div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h2 class="Nome">Nome do evento</h2>
+<input class="NomeDoEvento" type="text">
+<h2> Tipo do evento </h2>
+<select name="select" class="Select">
+<option value="valor1">Valor1</option>
+<option value="valor2" selected>Valor 2</option>
+<option value="valor3">Valor 3</option>
+</select>
+<h3>Descrição do evento</h3>
+<input class="Descrição" type="text">
+<button class="Salvar">Salvar</button>
+<button class="Cancelar">Cancelar</button>
+
+        </div>
+
+    </div>
 
 
-                 <script>
-                    function ISSO(){
-                        location.href = "login.mst"
-                    }
-                 </script>
+
+
+    <script>
+        function AbrirModal() {
+
+            var modal = document.getElementById("myModal");
+
+            var btn = document.getElementById("myBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>

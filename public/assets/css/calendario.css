@@ -2,6 +2,14 @@
 ul {list-style-type: none;}
 body {font-family: Quicksand, sans-serif;}
 
+* {
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0
+  }
+
 .main{
   background-color: #16161a;
 }
@@ -102,3 +110,91 @@ li:hover{
   -webkit-filter: drop-shadow(15px 10px 5px #7f5af0));
   filter: drop-shadow(15px 10px 5px #7f5af0);
 }
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 350px; /* Location of the box */
+  padding-left: 350px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #16161a;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #7f5af0;
+  width: 80%;
+  color: #fffffe;
+  height: 400px;
+}
+
+/* The Close Button */
+.close {
+  color: #fffffe;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fffffe;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.NomeDoEvento{
+ background-color: #7f5af0;
+ border-radius: 3px;
+ border-color: #010101;
+ border: red;
+ width: 500px;
+ height: 40px;
+ cursor: pointer;
+ font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-normal) 10px/23px Quicksand;
+ color: #010101;
+ padding-left: 5px;
+ font-size: large;
+}
+
+.Select{
+  background-color: #7f5af0;
+  border-radius: 3px;
+  border-color: #010101;
+  border: red;
+  width: 500px;
+  height: 40px;
+  cursor: pointer;
+  font: var(--unnamed-font-style-normal) normal
+       var(--unnamed-font-weight-normal) 10px/23px Quicksand;
+  color: #010101;
+  padding-left: 5px;
+  font-size: large;
+  -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+  
+}
+
+
+textarea:focus, input:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
+</style>
+
