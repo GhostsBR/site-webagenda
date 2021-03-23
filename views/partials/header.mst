@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/header.css">
     </head>
-    <body>
+    <body >
         <header>
                 <div class="container-fluid" id="containerHeader" >
                     <div class="row align-items-center" style="height: 100%; padding: 10px; padding-left: 20px; padding-right: 20px;">
-                        <a href="/"><img src="img/logo.png" alt="Logo" height="50px"></a>
+                        <a href="/"><img src="img/logo.png" alt="Logo" height="30px"></a>
                         {{#user}}
                             <div class="btn-group ml-auto p-2 profilebutton">
                                 <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">

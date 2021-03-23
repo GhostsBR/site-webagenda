@@ -5,10 +5,11 @@
 
 body {
     margin: 0;
+    background-color:#16161a ;
 }
 
 #containerHeader {
-    background-color: #339cf7;
+    background-color: #16161a;
 }
 
 .nav-item a {

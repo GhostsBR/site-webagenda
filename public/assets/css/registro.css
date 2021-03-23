@@ -3,140 +3,117 @@
       padding: 0%;
       font-family: "Quicksand", sans-serif;
     }
-    .menu{
-      max-width: width 100%;;
-    }
-    .menu {
-      background: #339cf7;
-      padding: 20px 15px;
-      box-shadow: 0px 3px 6px #00000045;
-      opacity: 1;
-    }
+
     .nome{
-      top: 369px;
-      left: 710px;
-      width: 400px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 10px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
+      width: 200px;
+      height: 40px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-family: Niveau Grotesk,Niveau Grotesk;
       text-align: center;
-      font: normal normal normal 30px/43px Quicksand;
-      letter-spacing: 0px;
-      color: #339cf7;
-      opacity: 1;
-    }
-    .nome::placeholder{
-      color: #339cf7;
-    }
-    .senha{
-      top: 369px;
-      left: 710px;
-      width: 400px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 10px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
-      text-align: center;
-      font: normal normal normal 30px/43px Quicksand;
-      letter-spacing: 0px;
-      color: #339cf7;
-      opacity: 1;
-    } 
-    .senha::placeholder{
-      color: #339cf7;
-    }
-    .email{
-      top: 369px;
-      left: 710px;
-      width: 400px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 10px;
-      opacity: 1;
-      text-align: center;
-      font: normal normal normal 30px/43px Quicksand;
-      letter-spacing: 0px;
-      color: #339cf7;
-      opacity: 1;
-    }
-    
-    .email::placeholder{
-      color: #339cf7;
-    }
-    
-        .registrar{
-        left: 710px;
-        width: 407px;
-        height: 55px;
-        background: #0272d4 0% 0% no-repeat padding-box;
-        font: normal normal normal 27px/43px Quicksand;
-        box-shadow: 0px 3px 6px #00000099;
-        border: 1px solid #00000066;
-        border-radius: 10px;
-        opacity: 1;
-        padding: 5px;
-        color: black;
-        }
-    .background {
-      background-repeat: no-repeat
-      bottom: 0;
-      margin-top: 5%;
-      position: relative;
-      text-align: center;
-      background-size: cover;
-      z-index: 0;
-      padding: 150px 0;
-    }
-    .date{
-      top: 369px;
-      left: 710px;
-      width: 400px;
-      height: 55px;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 3px 6px #00000099;
-      border: 1px solid #00000066;
-      border-radius: 10px;
-      opacity: 1;
-      font: var(--unnamed-font-style-normal) normal
-        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-      letter-spacing: var(--unnamed-character-spacing-0);
-      text-align: center;
-      font: normal normal normal 30px/43px Quicksand;
-      letter-spacing: 0px;
-      color: #339cf7;
-      opacity: 1;
-    }
-    .div-usuario{
-      padding-bottom: 8px;
-    }
-    
-    .div-senha{
-      padding: 8px;
-    }
-    
-    .div-registrar{
-      padding: 8px;
+      color: #fffffe;
+      background-color: #242629 ;
+      border-color: #16161a;
+      border: 0px;
+      padding: 5px;
     }
 
-    .div-nome{
-      padding: 8px;
+    .nome::placeholder{
+      color: #fffffe;
+      opacity: 1;
+      font-size: 10px;
+      font-family: Niveau Grotesk,Niveau Grotesk;
+      letter-spacing: 2px;
     }
-    .div-email{
-      padding: 8px;
+    
+    .senha{
+      width: 200px;
+      height: 40px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-family: Niveau Grotesk,Niveau Grotesk;
+      text-align: center;
+      color: #fffffe;
+      background-color: #242629 ;
+      border-color: #16161a;
+      border: 0px;
+      padding: 5px;
+    } 
+
+    .senha::placeholder{
+      color: #fffffe;
+      opacity: 1;
+      font-size: 10px;
+      font-family: Niveau Grotesk,Niveau Grotesk;
+      letter-spacing: 2px;
     }
-    .div-datatext-align: center;{
-      padding: 8px;
+
+     .email{
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-family: Niveau Grotesk,Niveau Grotesk;
+    text-align: center;
+    color: #fffffe;
+    background-color: #242629 ;
+    border-color: #16161a;
+    border: 0px;
+    padding: 5px;
+    } 
+    
+    .email::placeholder{
+      color: #fffffe;
+      opacity: 1;
+      font-size: 10px;
+      font-family: Niveau Grotesk,Niveau Grotesk;
+      letter-spacing: 2px;
+    }
+    
+     .registrar{
+      width: 200px;
+      height: 40px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-family: Niveau Grotesk,Niveau Grotesk;
+      text-align: center;
+      color: #fffffe;
+      background-color: #7f5af0 ;
+      border-color: #16161a;
+      border: 0px;
+      padding: 5px;
+      }
+
+      .div-box{ 
+        width: 200px;
+        height: 40px;
+        border-radius: 3px;
+        font-size: 10px;
+        font-family: Niveau Grotesk,Niveau Grotesk;
+        text-align: center;
+        color: #fffffe;
+        background-color: #242629;
+        border-color: #16161a;
+        border: 0px;
+        margin-bottom: 5px;
+       }
+
+    .background {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .date{
+      width: 200px;
+      height: 40px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-family: Niveau Grotesk,Niveau Grotesk;
+      text-align: center;
+      color: #fffffe;
+      background-color: #242629 ;
+      border-color: #16161a;
+      border: 0px;
+      padding: 5px;
     }

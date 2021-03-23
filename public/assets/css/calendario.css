@@ -10,6 +10,12 @@ body {font-family: Quicksand, sans-serif;}
   border:0
   }
 
+/* hr{
+  height: 1px;
+  background-color: #7f5af0;
+  margin-top: 50px;
+  width: 1080px;
+} */
 .main{
   background-color: #16161a;
 }
@@ -44,7 +50,7 @@ body {font-family: Quicksand, sans-serif;}
 }
 
 .weekdays {
-  margin: 0;
+   margin: 0; 
   padding: 10px 0;
   background-color: #16161a;
 }
@@ -155,6 +161,9 @@ li:hover{
   cursor: pointer;
 }
 
+.NomeEve{
+  font-size: 15px;
+}
 .NomeDoEvento{
  background-color: #7f5af0;
  border-radius: 3px;
@@ -169,8 +178,12 @@ li:hover{
  padding-left: 5px;
  font-size: large;
 }
-
+.TipoEve{
+  margin-top: 15px;
+  font-size: 15px;
+}
 .Select{
+  margin-top: px;
   background-color: #7f5af0;
   border-radius: 3px;
   border-color: #010101;
@@ -196,5 +209,47 @@ textarea:focus, input:focus, select:focus {
   border: 0 none;
   outline: 0;
 } 
+.Descri{
+  margin-top: 15px;
+  font-size: 20px;
+}
+.Descrição{
+  font: var(--unnamed-font-style-normal) normal
+       var(--unnamed-font-weight-normal) 10px/23px Quicksand;
+  font-size: 10px;
+  height: 150px;
+  width: 500px;
+  border-radius: 3px;
+  background-color: #7f5af0;
+  border-color: #010101;
+  
+  }
+
+.Salvar{
+  font-family: Quicksand,Reglar;
+  font-size: 30px;
+  border-radius: 3px;
+  background-color: #7f5af0;
+  color: #fffffe;
+  height: 60px;
+  width: 160px;
+  text-align: center;
+  margin-left: 650px;
+}
+.botao{
+  margin-top: -60px ;
+  margin-left: 600px;
+}
+.Cancelar{
+  font-family: Quicksand,Reglar;
+  font-size: 30px;
+  border-radius: 3px;
+  background-color: #7f5af0;
+  color: #fffffe;
+  height: 60px;
+  width: 160px;
+  margin-left: 8px;
+}
+
 </style>
 

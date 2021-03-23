@@ -8,15 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+<body >
   {{> header}}
   <div class="background">
+    <div class="conteiner flex">
     <form class="form" method="POST">
       <div class="div-usuario">
-        <input class="usuario" type="email" placeholder="Email" name="email" required>
+        <input class="usuario" type="email" placeholder="EMAIL" name="email" required>
       </div>
       <div class="div-senha">
-        <input class="senha" type="password" placeholder="Senha" name="password" required>
+        <input class="senha" type="password" placeholder="SENHA" name="password" required>
       </div>
       <div class="div-entrar">
         <button class="entrar" type="submit" value="login"> ENTRAR </button>
@@ -24,8 +25,9 @@
       <div class="div-registrar">
         <button class="registrar " onclick="window.location.href = '/registro'"git>CADASTRAR-SE</button>
       </div>
+    </div>
     </form>
-  </div>
 </body>
+</div>
 
 </html>

@@ -12,17 +12,16 @@
   <div>
     <div class="background" >
       <form method="POST">
-        <div class="div-nome">
+        <div class="div-box">
           <input class="nome" type="text" placeholder="Nome Completo" name="fullname" required>
         </div>
-        <div class="div-email">
+        <div class="div-box">
           <input class="email" type="email" placeholder="Email" name="email" required>
         </div>
-        <div class="div-senha">
+        <div class="div-box">
           <input class="senha" type="password" placeholder="Senha" name="password" required>
         </div>
-        <div class="div-data">
-          <label for="diaa"></label>
+        <div class="div-box">
           <input class="date" type="date" id="diaa" name="birth">
         </div>
         <div class="div-registrar">
