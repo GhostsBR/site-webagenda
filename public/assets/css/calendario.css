@@ -16,6 +16,7 @@ body {font-family: Quicksand, sans-serif;}
   margin-top: 50px;
   width: 1080px;
 } */
+
 .main{
   background-color: #16161a;
 }
@@ -81,8 +82,8 @@ body {font-family: Quicksand, sans-serif;}
   color: #fffffe;
   border: 1px solid #7f5af0;
   max-width: 250px;
-  height: 200px;
-  max-height: 200px;
+  height: 130px;
+  max-height: 130px;
   /*box-shadow: 0px 3px 6px #7f5af0;*/
   opacity: 1;
 }
@@ -212,11 +213,14 @@ textarea:focus, input:focus, select:focus {
 .Descri{
   margin-top: 15px;
   font-size: 20px;
+  text-align: start;
 }
 .Descrição{
+  display: flex;
+  flex-wrap: wrap;
   font: var(--unnamed-font-style-normal) normal
        var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-  font-size: 10px;
+  font-size: 25px;
   height: 150px;
   width: 500px;
   border-radius: 3px;
@@ -234,7 +238,7 @@ textarea:focus, input:focus, select:focus {
   height: 60px;
   width: 160px;
   text-align: center;
-  margin-left: 650px;
+  margin-left: 100px;
 }
 .botao{
   margin-top: -60px ;
