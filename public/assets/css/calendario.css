@@ -122,12 +122,14 @@ li:hover{
 
 
 .modal {
+  margin: 0px;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 350px; /* Location of the box */
-  padding-left: 350px;
-  left: 0;
+  padding-top: 300px; /* Location of the box */
+  padding-left: 500px;
+  padding-right: 500px;
+  left: 0px;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -136,13 +138,20 @@ li:hover{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+h2{
+  font-family: Niveau Grotesk,Niveau Grotesk;
+  font-size: 23px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
 /* Modal Content */
 .modal-content {
   background-color: #16161a;
   margin: auto;
   padding: 20px;
   border: 1px solid #7f5af0;
-  width: 80%;
+  width: 100%;
   color: #fffffe;
   height: 400px;
 }
@@ -166,15 +175,13 @@ li:hover{
   font-size: 15px;
 }
 .NomeDoEvento{
+  margin-top: ;
  background-color: #7f5af0;
- border-radius: 3px;
+ border-radius: 1px;
  border-color: #010101;
- border: red;
- width: 500px;
- height: 40px;
- cursor: pointer;
- font: var(--unnamed-font-style-normal) normal
-      var(--unnamed-font-weight-normal) 10px/23px Quicksand;
+ width: 400px;
+ height: 35px;
+ font-family: Niveau Grotesk,Niveau Grotesk;
  color: #010101;
  padding-left: 5px;
  font-size: large;
@@ -184,16 +191,15 @@ li:hover{
   font-size: 15px;
 }
 .Select{
-  margin-top: px;
+  margin-top: 3px;
   background-color: #7f5af0;
-  border-radius: 3px;
+  border-radius: 1px;
   border-color: #010101;
   border: red;
-  width: 500px;
-  height: 40px;
+  width: 400px;
+  height: 35px;
   cursor: pointer;
-  font: var(--unnamed-font-style-normal) normal
-       var(--unnamed-font-weight-normal) 10px/23px Quicksand;
+  font-family: Niveau Grotesk,Niveau ,BOLD;
   color: #010101;
   padding-left: 5px;
   font-size: large;
@@ -218,41 +224,97 @@ textarea:focus, input:focus, select:focus {
 .Descrição{
   display: flex;
   flex-wrap: wrap;
-  font: var(--unnamed-font-style-normal) normal
-       var(--unnamed-font-weight-normal) 10px/23px Quicksand;
-  font-size: 25px;
-  height: 150px;
-  width: 500px;
-  border-radius: 3px;
+  f font-family: Niveau Grotesk,Niveau Grotesk;
+  font-size: 16px;
+  height: 100px;
+  width: 400px;
+  border-radius: 1px;
   background-color: #7f5af0;
   border-color: #010101;
+  overflow-y: hidden;
+  resize: none;
   
   }
 
 .Salvar{
-  font-family: Quicksand,Reglar;
-  font-size: 30px;
-  border-radius: 3px;
+  font-family: Niveau Grotesk,Niveau Grotesk;
+  font-size: 25px;
+  border-radius: 1px;
   background-color: #7f5af0;
   color: #fffffe;
-  height: 60px;
-  width: 160px;
+  height: 40px;
+  width: 120px;
   text-align: center;
-  margin-left: 100px;
+  
 }
 .botao{
-  margin-top: -60px ;
-  margin-left: 600px;
+  margin-top: -40px ;
+  margin-left: 450px;
 }
 .Cancelar{
-  font-family: Quicksand,Reglar;
-  font-size: 30px;
-  border-radius: 3px;
+  font-family: Niveau Grotesk,Niveau Grotesk;
+  font-size: 25px;
+  border-radius: 1px;
   background-color: #7f5af0;
   color: #fffffe;
-  height: 60px;
-  width: 160px;
+  height: 40px;
+  width: 120px;
   margin-left: 8px;
+}
+
+.p1{
+  margin-top: 5px;
+  font-size: 17px;
+  text-align: center;
+  font-family: Quicksand,Bold;
+  background-color: #72757e;
+  border-radius: 1px;
+  color: #010101;
+}
+
+.p2{
+  margin-top: 5px;
+  font-size: 17px;
+  text-align: center;
+  font-family: Quicksand,Bold;
+  background-color: #2cb67d;
+  border-radius: 1px;
+  color: #010101;
+}
+
+.p2{
+  margin-top: 5px;
+  font-size: 17px;
+  text-align: center;
+  font-family: Quicksand,Bold;
+  background-color: #2cb67d;
+  border-radius: 1px;
+  color: #010101;
+}
+
+.p3{
+  margin-top: 5px;
+  font-size: 17px;
+  text-align: center;
+  font-family: Quicksand,Bold;
+  background-color: #7f5af0;
+  border-radius: 1px;
+  color: #010101;
+}
+
+.TituloModal{
+  font-family: Niveau Grotesk,Niveau Grotesk;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 8px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.LinhaModal{
+  
+  height: 1px;
+  background-color:#7f5af0;
 }
 
 </style>
