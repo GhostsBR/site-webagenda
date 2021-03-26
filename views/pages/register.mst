@@ -25,11 +25,30 @@
           <input class="date" type="date" id="diaa" name="birth">
         </div>
         <div class="div-registrar">
-          <button class="registrar" onclick="window.location.href = '#'" >CADASTRAR
+          <button class="registrar" onclick= "salvar()" >CADASTRAR
           </button>       
         </div>
       </form>
     </div>
   </div>
+
+  <script>
+
+      function salvar(){
+        var http = new XMLHttpRequest();
+        var url = '/event';
+        http.open('POST', url, true);
+        http.setRequestHeader('Content-type', 'application/json');
+        http.onreadystatechange = function() {
+            if(http.readyState == 4 && http.status == 200) {
+                alert(http.responseText);
+            }
+        }
+        http.send({ event: "EVENTO", type: "TIPO", description: "DESCRIÇÃO", date: "DATA" });
+      }
+      
+  </script>
+
 </body>
 </html>
+
