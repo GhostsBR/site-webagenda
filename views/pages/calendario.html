@@ -34,14 +34,34 @@
 
     <!-- <ul name="lista" class="days" id="myBtn" onclick='AbrirModal()'> -->
     <ul name="lista" class="days" id="myBtn">
-        <li id="1"> 1 <div> <p class="p1">nome do evento</p> </div> </li>
-        <li id="2"> 2 <div> <p class="p1">nome do evento</p </div>  </li>
-        <li id="3"> 3 <div> <p class="p1">nome do evento</p> </div> </li>
-        <li id="4"> 4 <div> <p class="p1">nome do evento</p> </div> </li>
-        <li id="5"> 5 <div> <p class="p1">nome do evento</p></div>  </li>
-        <li id="6"> 6 <div> <p class="p1">nome do evento</p></div>  </li>
-        <li id="7"> 7 <div> <p class="p1">nome do evento</p> </div> </li>
-        <li>8 <div>
+        <li id="1"> 1 <div>
+                <p class="p1">nome do evento</p>
+            </div>
+        </li>
+        <li id="2"> 2 <div>
+                <p class="p1">nome do evento</p </div>
+        </li>
+        <li id="3"> 3 <div>
+                <p class="p1">nome do evento</p>
+            </div>
+        </li>
+        <li id="4"> 4 <div>
+                <p class="p1">nome do evento</p>
+            </div>
+        </li>
+        <li id="5"> 5 <div>
+                <p class="p1">nome do evento</p>
+            </div>
+        </li>
+        <li id="6"> 6 <div>
+                <p class="p1">nome do evento</p>
+            </div>
+        </li>
+        <li id="7"> 7 <div>
+                <p class="p1">nome do evento</p>
+            </div>
+        </li>
+        <li >8 <div>
                 <p class="p1">nome do evento</p>
             </div>
         </li>
@@ -139,19 +159,18 @@
         </li>
     </ul>
 
-    <div id="myModal" class="modal">
-        <form action="/event" method="POST">
+    <div id="myModal" class="modal" data-day="1">
         <div class="modal-content">
             <h2 class="TituloModal">CADASTRAR EVENTOS</h2>
             <hr class="LinhaModal">
             <span class="close">&times;</span>
             <div class="NomeEve">
                 <h2 class="Nome">Nome do evento</h2>
-                <input class="NomeDoEvento" type="text">
+                <input class="NomeDoEvento" type="text" id="name">
             </div>
             <div class="TipoEve">
                 <h2> Tipo do evento </h2>
-                <select name="select" class="Select">
+                <select name="select" class="Select" id="type">
                     <option value="valor1">Cinza</option>
                     <option value="valor2" selected>Verde</option>
                     <option value="valor3">Roxo</option>
@@ -160,15 +179,14 @@
             </div>
             <div class="Descri">
                 <h2>Descrição do evento</h2>
-                <textarea class="Descrição"></textarea>
+                <textarea class="Descrição" id="description"></textarea>
                 <!-- <input class="Descrição" type="textarea"> -->
                 <div class="botao">
-                    <button class="Salvar" method="post" >Salvar</button>
-                    <button class="Cancelar">Cancelar</button>
+                    <button type="button" id="salvar-modal" class="Salvar">Salvar</button>
+                    <button type="button" id="close-modal" class="Cancelar">Cancelar</button>
                 </div>
             </div>
         </div>
-        </form>
 
     </div>
     </div>
@@ -177,34 +195,47 @@
 
 
     <script>
+        var daySelected = 0;
+
         $(document).ready(function () {
-            $('#myBtn li').click(function (e) {
-                $("#myModal").show();
-
-
-            });
             $('span.close').click(function (e) {
                 $("#myModal").hide();
             })
+
+            $('#close-modal').click(function (e) {
+                $("#myModal").hide();
+            })
+
+            $('#salvar-modal').click(function (e) {
+                e.preventDefault()
+                salvar();
+            })
+
             $('li').click(function () {
+                $("#myModal").show();
+
+                daySelected = this.id
+                console.log(daySelected)
+
                 var qtd = $(this).children()
                 var dia = console.log(this.id);
             });
-
         });
 
-        function salvar(){
+        const salvar = () => {
             var http = new XMLHttpRequest();
-            var url = '/event';
+            var url = 'http://localhost:30/event';
+
             http.open('POST', url, true);
             http.setRequestHeader('Content-type', 'application/json');
-            http.onreadystatechange = function() {
-                if(http.readyState == 4 && http.status == 200) {
-                    alert(http.responseText);
-    }
-}
-            http.send({ event: $( "#NomeDoEvento" ).val(), type: $( "#Select" ).val(), description: $( "#Descrição" ).val(), date:$( "#dia" ).val()  });
 
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    alert(http.responseText);
+                }
+            }
+
+            http.send(JSON.stringify({ name: $("#name").val(), type: $("#type").val(), description: $("#description").val(), date: daySelected }));
         }
 
 

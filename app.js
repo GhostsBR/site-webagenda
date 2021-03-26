@@ -3,6 +3,7 @@ const mustache = require('mustache-express');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const flash = require('express-flash');
+const cors = require("cors")
 const email = require('./models/nodeMailer');
 
 const { user } = require('./models/database');
@@ -32,6 +33,9 @@ app.use(session({
     saveUninitialized:false
 }));
 app.use(flash());
+app.use(cors({
+    origin: "*"
+}));
 
 //helpers
 app.use((req, res, next) => {
