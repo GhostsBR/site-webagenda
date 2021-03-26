@@ -48,3 +48,28 @@ const userSchema = new mongoose.Schema({
 
 userSchema.plugin(PassaportLocalMongoose, {usernameField: 'email'});
 exports.user = mongoose.model('user', userSchema);
+
+
+const eventSchema = new mongoose.Schema({
+   id: {
+       type: Number,
+   },
+   name: {
+       type: String,
+       required: true
+   },
+   description: {
+       type: String,
+       required: false
+   },
+   type: {
+        type: String,
+        required: false
+    },
+    date: {
+        type: String,
+        required: true
+    }
+});
+
+exports.event = mongoose.model('event', eventSchema);
