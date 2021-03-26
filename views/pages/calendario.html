@@ -188,7 +188,9 @@
             })
             $('li').click(function () {
                 var qtd = $(this).children()
+                var dia;
                 console.log(this.id);
+                var dia = console.log(this.id);
             });
 
         });
@@ -203,7 +205,7 @@
                     alert(http.responseText);
     }
 }
-            http.send({ event: "EVENTO", type: "TIPO", description: "DESCRIÇÃO", date: "DATA" });
+            http.send({ event: $( "#NomeDoEvento" ).val(), type: $( "#Select" ).val(), description: $( "#Descrição" ).val(), date:$( "#dia" ).val()  });
 
         }
 
