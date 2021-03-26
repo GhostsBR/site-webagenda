@@ -4,5 +4,5 @@ exports.index = (req, res) => {
         return;
     }
 
-    res.render("panel", {user: req.user});
+    res.render("calendario", {user: req.user});
 };
