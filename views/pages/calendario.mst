@@ -171,9 +171,9 @@
             <div class="TipoEve">
                 <h2> Tipo do evento </h2>
                 <select name="select" class="Select" id="type">
-                    <option value="valor1">Cinza</option>
-                    <option value="valor2" selected>Verde</option>
-                    <option value="valor3">Roxo</option>
+                    <option value="valor1" id="OpProva">Prova</option>
+                    <option value="valor2" id="OpTrabalho">Trabalho</option>
+                    <option value="valor3" id="OpAtividade" >Atividade</option>
                     <img src="../partials/" alt="">
                 </select>
             </div>
