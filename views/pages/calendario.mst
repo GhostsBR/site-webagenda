@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../../public/assets/css/calendario.css" />
-<script src="../../public/assets/js/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="assets/css/calendario.css" />
+<script src="assets/js/jquery-3.5.1.min.js"></script>
 
 <body class="main">
     <div class="month">
